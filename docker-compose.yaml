@@ -2,7 +2,7 @@ version: "2.2"
 services:
   app:
     build:
-      dockerfile: ./Dockerfile
+      dockerfile: django-deploy/Dockerfile
     command:
       - gunicorn
       - mysite.wsgi:application
